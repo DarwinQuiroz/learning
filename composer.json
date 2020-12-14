@@ -15,7 +15,9 @@
         "intervention/image": "^2.5",
         "laravel/cashier": "^12.6",
         "laravel/framework": "^7.29",
+        "laravel/socialite": "^5.1",
         "laravel/tinker": "^2.5",
+        "laravel/ui": "2.4",
         "laraveles/spanish": "^1.5",
         "yajra/laravel-datatables-oracle": "~9.0"
     },
