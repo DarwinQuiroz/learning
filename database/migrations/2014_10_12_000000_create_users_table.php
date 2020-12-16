@@ -23,20 +23,20 @@ class CreateUsersTable extends Migration
 
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('role_id')->constrained('roles')->default(Role::STUDENT);
+            $table->foreignId('role_id')->default(Role::STUDENT)->constrained('roles');
             $table->string('name');
             $table->string('last_name')->nullable();
             $table->string('slug');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->nullable();
             $table->string('picture')->nullable();
 
             $table->rememberToken();
             $table->timestamps();
         });
 
-        Schema::create('users_social_account', function (Blueprint $table) {
+        Schema::create('user_social_accounts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->string('provider');
@@ -53,6 +53,6 @@ class CreateUsersTable extends Migration
     {
         Schema::dropIfExists('roles');
         Schema::dropIfExists('users');
-        Schema::dropIfExists('users_social_account');
+        Schema::dropIfExists('user_social_accounts');
     }
 }

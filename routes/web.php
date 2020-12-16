@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('login/{driver}', 'SocialAuthController@redirectToProvider')->name('social.auth');
+Route::get('login/{driver}/callback', 'SocialAuthController@handleProviderCallback');
+
 Route::get('/', function () {
     return view('welcome');
 });
