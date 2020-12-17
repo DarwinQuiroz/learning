@@ -1,5 +1,6 @@
 <?php
 
+use App\Role;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('setlanguage/{lang}', 'Controller@setLanguage')->name('set_language');
 
 Route::get('login/{driver}', 'SocialAuthController@redirectToProvider')->name('social.auth');
 Route::get('login/{driver}/callback', 'SocialAuthController@handleProviderCallback');

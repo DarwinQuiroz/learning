@@ -32,6 +32,16 @@
     "All rights reserved.":  "Todos los derechos reservados.",
     "Socialite": "Inicia sesión con socialite",
     "Cancel login": "Inicio de sesión cancelado",
-    "MessageInfo": "Mensaje informativo"
+    "MessageInfo": "Mensaje informativo",
+    "Español": "Español",
+    "Inglés": "Inlgés",
+    "Selecciona un idioma": "Selecciona un idioma",
+    "Mi perfil": "Mi perfil",
+    "Mis suscripciones": "Mis suscripciones",
+    "Mis facturas": "Mis facturas",
+    "Mis cursos": "Mis cursos",
+    "Cursos desarrollados por mi": "Cursos desarrollados por mi",
+    "Crear curso": "Crear curso",
+    "Administrar": "Administrar"
 
 }
