@@ -11,5 +11,8 @@
     "Mis cursos": "My courses",
     "Cursos desarrollados por mi": "Courses developed by me",
     "Crear curso": "Create course",
-    "Administrar": "Manage"
+    "Administrar": "Manage",
+    "Administrar cursos": "Manage courses",
+    "Administrar estudiantes": "Manage students",
+    "Administrar profesores": "Manage teachers"
 }

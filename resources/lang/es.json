@@ -42,6 +42,8 @@
     "Mis cursos": "Mis cursos",
     "Cursos desarrollados por mi": "Cursos desarrollados por mi",
     "Crear curso": "Crear curso",
-    "Administrar": "Administrar"
-
+    "Administrar": "Administrar",
+    "Administrar cursos": "Administrar cursos",
+    "Administrar estudiantes": "Administrar estudiantes",
+    "Administrar profesores": "Administrar profesores"
 }

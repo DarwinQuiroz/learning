@@ -1,7 +1,7 @@
 @if (Auth::check())
     <li class="nav-item dropdown">
         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {{ auth()->user()->name }} <span class="caret"></span>
+            {{ auth()->user()->name }} <span class="caret"></span> <i class="fa fa-user"></i>
         </a>
 
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
