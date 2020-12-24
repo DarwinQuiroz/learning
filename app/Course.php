@@ -87,4 +87,14 @@ class Course extends Model
     {
         return $this->belongsTo(Teacher::class);
     }
+
+    public function pathAttachment()
+    {
+        return "/images/courses/{$this->picture}";
+    }
+
+    public function getRatingAttribute()
+    {
+        return $this->reviews->avg('rating');
+    }
 }

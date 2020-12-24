@@ -14,5 +14,8 @@
     "Administrar": "Manage",
     "Administrar cursos": "Manage courses",
     "Administrar estudiantes": "Manage students",
-    "Administrar profesores": "Manage teachers"
+    "Administrar profesores": "Manage teachers",
+    "No hay cursos disponibles": "There isn't available courses",
+    "Más información": "More information",
+    "Accede a cualquier curso de inmediato": "Access any course immediately"
 }

@@ -1,6 +1,5 @@
 <?php
 
-use App\Role;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +25,12 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('images/{path}/{attachment}', function($path, $attachment) {
+    $file = sprintf('storage/%s/%s', $path, $attachment);
+
+    if(File::exists($file))
+    {
+        return Image::make($file)->response();
+    }
+});
