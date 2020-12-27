@@ -52,6 +52,8 @@ class Course extends Model
     const PENDDING = 2;
     const REJECTED = 3;
 
+    protected $withCount = ['students', 'reviews'];
+
     public function category()
     {
         return $this->belongsTo(Category::class)->select('id', 'name');
@@ -96,5 +98,18 @@ class Course extends Model
     public function getRatingAttribute()
     {
         return $this->reviews->avg('rating');
+    }
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    public function relatedCourses()
+    {
+        return Course::with('reviews')
+        ->whereCategoryId($this->category->id)
+        ->where('id', '<>', $this->id)
+        ->latest()->limit(6)->get();
     }
 }

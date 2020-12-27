@@ -2,10 +2,10 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
+use Laravel\Cashier\Billable;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 /**
  * App\User
@@ -47,7 +47,7 @@ use Illuminate\Support\Str;
  */
 class User extends Authenticatable
 {
-    use Notifiable;
+    use Notifiable, Billable;
 
     protected static function boot()
     {

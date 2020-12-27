@@ -79,6 +79,6 @@ class RegisterController extends Controller
             'user_id' => $user->id
         ]);
 
-        return redirect()->route('home');
+        return redirect('/');
     }
 }
